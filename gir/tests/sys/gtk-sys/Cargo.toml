@@ -1,0 +1,48 @@
+
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dependencies]
+bitflags = "0.4"
+libc = "0.2"
+
+[dependencies.atk-sys]
+path = "../atk-sys"
+
+[dependencies.cairo-sys-rs]
+git = "https://github.com/gtk-rs/cairo"
+
+[dependencies.gdk-pixbuf-sys]
+path = "../gdk-pixbuf-sys"
+
+[dependencies.gdk-sys]
+path = "../gdk-sys"
+
+[dependencies.gio-sys]
+path = "../gio-sys"
+
+[dependencies.glib-sys]
+path = "../glib-sys"
+
+[dependencies.gobject-sys]
+path = "../gobject-sys"
+
+[dependencies.pango-sys]
+path = "../pango-sys"
+
+[features]
+v3_10 = ["v3_8"]
+v3_12 = ["v3_10"]
+v3_14 = ["v3_12"]
+v3_16 = ["v3_14"]
+v3_6 = []
+v3_8 = ["v3_6"]
+
+[lib]
+name = "gtk_sys"
+
+[package]
+build = "build.rs"
+links = "gtk"
+name = "gtk-sys"
+version = "0.2.0"

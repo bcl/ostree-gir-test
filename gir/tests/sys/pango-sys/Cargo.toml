@@ -1,0 +1,29 @@
+
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dependencies]
+bitflags = "0.4"
+libc = "0.2"
+
+[dependencies.glib-sys]
+path = "../glib-sys"
+
+[dependencies.gobject-sys]
+path = "../gobject-sys"
+
+[features]
+v1_31 = []
+v1_32 = ["v1_31"]
+v1_32_4 = ["v1_32"]
+v1_34 = ["v1_32_4"]
+v1_36_7 = ["v1_34"]
+
+[lib]
+name = "pango_sys"
+
+[package]
+build = "build.rs"
+links = "pango"
+name = "pango-sys"
+version = "0.2.0"

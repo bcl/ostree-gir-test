@@ -1,0 +1,14 @@
+language: rust
+rust:
+- nightly
+- stable
+addons:
+  apt:
+    packages:
+    - libgtk-3-dev
+    - libssh2-1-dev
+script:
+  - cargo build --release
+  - cargo test --release
+  - git clone -q https://github.com/gkoz/gir-files tests/gir-files
+  - ./tests/sys/test.sh

@@ -1,0 +1,30 @@
+
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dependencies]
+bitflags = "0.4"
+libc = "0.2"
+
+[dependencies.glib-sys]
+path = "../glib-sys"
+
+[dependencies.gobject-sys]
+path = "../gobject-sys"
+
+[features]
+v2_34 = []
+v2_36 = ["v2_34"]
+v2_38 = ["v2_36"]
+v2_40 = ["v2_38"]
+v2_42 = ["v2_40"]
+v2_44 = ["v2_42"]
+
+[lib]
+name = "gio_sys"
+
+[package]
+build = "build.rs"
+links = "gio"
+name = "gio-sys"
+version = "0.2.0"
