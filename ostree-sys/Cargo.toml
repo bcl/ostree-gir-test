@@ -1,0 +1,33 @@
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dependencies]
+bitflags = "0.4"
+libc = "0.2"
+
+[dependencies.gio-sys]
+version = "0.3.2"
+
+[dependencies.glib-sys]
+version = "0.3.2"
+
+[dependencies.gobject-sys]
+version = "0.3.2"
+
+[features]
+v2017_3 = []
+
+[lib]
+name = "ostree_sys"
+
+[package]
+authors = ["Brian C. Lane <bcl@redhat.com>"]
+build = "build.rs"
+description = "Rust ffi interface for ostree."
+homepage = "https://github.com/weldr/ostree-rs"
+keywords = ["ffi", "ostree"]
+license = "GPL-3.0"
+links = "o_s_tree"
+name = "ostree-sys"
+repository = "https://github.com/weldr/ostree-rs"
+version = "0.1.1"

@@ -1,0 +1,64 @@
+[options]
+girs_dir = "gir-files"
+library = "OSTree"
+version = "1.0"
+min_cfg_version = "1.0"
+target_path = "."
+work_mode = "normal"
+
+generate = [
+##    "OSTree.AsyncProgress",
+##    "OSTree.BootconfigParser",
+#    "OSTree.ChecksumInputStream",
+##    "OSTree.Deployment",
+##    "OSTree.GpgVerifyResult",
+##    "OSTree.MutableTree",
+    "OSTree.Repo",
+    "OSTree.RepoFile",
+##    "OSTree.SePolicy",
+##    "OSTree.Sysroot",
+##    "OSTree.SysrootUpgrader",
+#    "OSTree.AsyncProgressClass",
+#    "OSTree.Bootloader",
+#    "OSTree.BootloaderGrub2",
+#    "OSTree.BootloaderInterface",
+#    "OSTree.BootloaderSyslinux",
+#    "OSTree.BootloaderUboot",
+#    "OSTree.ChecksumInputStreamClass",
+#    "OSTree.ChecksumInputStreamPrivate",
+#    "OSTree.CmdPrivateVTable",
+##    "OSTree.DiffItem",
+#    "OSTree.GpgVerifier",
+#    "OSTree.LibarchiveInputStream",
+#    "OSTree.LibarchiveInputStreamClass",
+#    "OSTree.LibarchiveInputStreamPrivate",
+#    "OSTree.LzmaCompressor",
+#    "OSTree.LzmaCompressorClass",
+#    "OSTree.LzmaDecompressor",
+#    "OSTree.LzmaDecompressorClass",
+#    "OSTree.MutableTreeClass",
+#    "OSTree.MutableTreeIter",
+#    "OSTree.RepoCheckoutAtOptions",
+#    "OSTree.RepoCheckoutOptions",
+#    "OSTree.RepoCommitModifier",
+#    "OSTree.RepoCommitTraverseIter",
+#    "OSTree.RepoDevInoCache",
+#    "OSTree.RepoExportArchiveOptions",
+#    "OSTree.RepoFileClass",
+#    "OSTree.RepoFileEnumerator",
+#    "OSTree.RepoFileEnumeratorClass",
+#    "OSTree.RepoImportArchiveOptions",
+#    "OSTree.RepoPruneOptions",
+#    "OSTree.RepoTransactionStats",
+#    "OSTree.RollsumMatches",
+#    "OSTree.TlsCertInteraction",
+#    "OSTree.TlsCertInteractionClass",
+]
+
+ignore = [
+]
+
+manual = [
+]
+
+
